@@ -18,10 +18,7 @@ import (
 	"strconv"
 )
 
-type MysqlFactory struct {
-}
-
-func (mysqlFactory MysqlFactory) PutRecord(rows *sql.Rows, args ...interface{}) error {
+func PutRecord(rows *sql.Rows, args ...interface{}) error {
 
 	values := make([]sql.RawBytes, len(args))
 
@@ -43,12 +40,12 @@ func (mysqlFactory MysqlFactory) PutRecord(rows *sql.Rows, args ...interface{}) 
 			continue
 		}
 		value = string(col)
-		mysqlFactory.putColData(args[i], value)
+		putColData(args[i], value)
 	}
 	return nil
 }
 
-func (mysqlFactory MysqlFactory) putColData(arg interface{}, value string) {
+func putColData(arg interface{}, value string) {
 	switch vtype := arg.(type) {
 	case *string:
 		*vtype = value
