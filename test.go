@@ -18,10 +18,6 @@ import (
 )
 
 func Test(){
-<<<<<<< HEAD
 	fmt.Println(22)
-=======
-	fmt.Println(33)
->>>>>>> 641b0cb128424721b560fee6fc72fc1e20cc9550
 }
 
