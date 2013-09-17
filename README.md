@@ -1,7 +1,7 @@
 gotool
 ======
 
-//从指定位置开始截取固定长度
+//从指定位置开始截取固定长度<br/>
 func Substr(str string, start, length int) string {}
 
 //截取索引号之间的字符内容
