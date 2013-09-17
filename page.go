@@ -11,7 +11,7 @@
 // 修改历史:版本号 修改日期 修改人 修改说明
 //
 // 1.0 2013-08-06 13:04 black 创建文档
-package page
+package commonlib
 
 import (
 	"math"

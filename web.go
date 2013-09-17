@@ -11,7 +11,7 @@
 // 修改历史:版本号 修改日期 修改人 修改说明
 //
 // 1.0 2013-09-17 14:37 black 创建文档
-package web
+package commonlib
 
 import (
 	"bytes"

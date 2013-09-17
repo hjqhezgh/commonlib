@@ -11,7 +11,7 @@
 // 修改历史:版本号 修改日期 修改人 修改说明
 //
 // 1.0 2013-07-24 15:09 Bill 创建文档
-package sql
+package commonlib
 
 import (
 	"database/sql"
