@@ -10,7 +10,7 @@
 //
 // 修改历史:版本号 修改日期 修改人 修改说明
 //1.0 2013-05-23 13:32 Black 创建
-package commonlib
+package tools
 
 //从指定位置开始截取固定长度
 func Substr(str string, start, length int) string {
