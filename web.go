@@ -61,14 +61,16 @@ func OutputJson(w http.ResponseWriter, object interface{}, newlineReplace string
 		return
 	}
 
+
 	str := string(b)
 
 	str = strings.Replace(str, "\n", newlineReplace, -1)
 	str = strings.Replace(str, "\n\r", newlineReplace, -1)
 	str = strings.Replace(str, "\r\n", newlineReplace, -1)
 	str = strings.Replace(str, "\r", newlineReplace, -1)
+	/*
 	str = strings.Replace(str, "\"", "\\\"", -1)
-	str = strings.Replace(str, "'", "\\'", -1)
+	str = strings.Replace(str, "'", "\\'", -1)*/
 
 	w.Write([]byte(str))
 }
