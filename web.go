@@ -15,10 +15,10 @@ package commonlib
 
 import (
 	"bytes"
-	"net/http"
-	"text/template"
 	"encoding/json"
+	"net/http"
 	"strings"
+	"text/template"
 )
 
 //html模板合成方法
@@ -54,7 +54,7 @@ func RenderTemplate(w http.ResponseWriter, r *http.Request, templateName string,
 }
 
 //JSON数据输出，需要指定换行符号的替换符号
-func OutputJson(w http.ResponseWriter, object interface{},newlineReplace string) {
+func OutputJson(w http.ResponseWriter, object interface{}, newlineReplace string) {
 	b, err := json.Marshal(object)
 
 	if err != nil {

@@ -19,19 +19,19 @@ import (
 
 //传统分页
 type TraditionPage struct {
-	CurrPageNo int      `json:currPageNo` //当前页
-	PrePageNo  int      `json:prePageNo`  //上一页
-	NextPageNo int      `json:nextPageNo` //下一页
-	TotalPage  int      `json:totalPage`  //总共几页
-	TotalNum   int      `json:totalNum`   //总共几条
-	PageSize   int      `json:pageSize`   //每页几条
-	HasNext    bool     `json:hasNext`    //是否有下一页
-	HasPre     bool     `json:hasPre`     //是否有上一页
-	Datas      []interface {} `json:datas`      //数据集
+	CurrPageNo int           `json:currPageNo` //当前页
+	PrePageNo  int           `json:prePageNo`  //上一页
+	NextPageNo int           `json:nextPageNo` //下一页
+	TotalPage  int           `json:totalPage`  //总共几页
+	TotalNum   int           `json:totalNum`   //总共几条
+	PageSize   int           `json:pageSize`   //每页几条
+	HasNext    bool          `json:hasNext`    //是否有下一页
+	HasPre     bool          `json:hasPre`     //是否有上一页
+	Datas      []interface{} `json:datas`      //数据集
 }
 
 //构建传统式Page对象
-func BulidTraditionPage(currPageNo, pageSize, totalNum int, datas []interface {}) (pageData *TraditionPage) {
+func BulidTraditionPage(currPageNo, pageSize, totalNum int, datas []interface{}) (pageData *TraditionPage) {
 
 	pageData = new(TraditionPage)
 
