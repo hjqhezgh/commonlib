@@ -64,5 +64,10 @@ func putColData(arg interface{}, value string) {
 		i, _ := strconv.Atoi(value)
 		*vtype = float32(i)
 		break
+
+	case *float64:
+		i, _ := strconv.ParseFloat(value, 64)
+		*vtype = float64(i)
+		break
 	}
 }
